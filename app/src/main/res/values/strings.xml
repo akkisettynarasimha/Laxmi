@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laxmi</string>
+    <string name="lorem_ipsum">Laxmi</string>
+    <string name="random_title">Laxmi</string>
+    <string name="title_activity_blur_dailog_fragment">BlurDailogFragment</string>
+
+
+</resources>

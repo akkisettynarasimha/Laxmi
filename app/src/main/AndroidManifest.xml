@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.strsar.laxmi">
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activitylifecycle.ActivityLifeCycle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bludailog.BlurDailogFragment"
+            android:label="@string/title_activity_blur_dailog_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".secarchbar.SearchActivity" />
+
+        <receiver android:name=".broadcastreceivers.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".broadcastreceivers.BroadCastReceviers">
+
+        </activity>
+        <activity android:name=".updateapp.UpdateApp" />
+
+        <receiver android:name=".broadcastreceivers.MyReceiver">
+            <intent-filter>
+                <action android:name="com.tutorialspoint.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".database.DatabaseActivity" />
+        <activity android:name=".retrofit.RetrofitExample" />
+        <activity android:name=".senser.SensorsActivity" />
+        <activity android:name=".bottomsheet.BottomSheetWithData" />
+        <activity android:name=".calenderview.CalenderView" />
+        <activity android:name=".stringhandleing.StrSplit" />
+        <activity android:name=".fragments.FragmentsLifeCycle" />
+        <activity android:name=".recyclerviewexample.MultipleSelction" />
+        <activity android:name=".oops.Equals" />
+        <activity android:name=".dailogbox.CustomDailogBox" />
+        <activity android:name=".permissions.PhoneCall" />
+        <activity android:name=".Multithreading.Threading" />
+        <activity android:name=".MainActivity" />
+        <!--<activity
+            android:name=".SearchActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.RedToolbar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />
+        </activity>-->
+    </application>
+
+</manifest>
